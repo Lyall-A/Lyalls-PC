@@ -1,0 +1,9 @@
+{
+    "serverPort": 4000,
+    "address2": "192.168.1.86",
+    "address": "localhost",
+    "macAddress": "e8:65:38:93:d9:89",
+    "wakeOnLanPort": 9,
+    "port": 4923,
+    "timeout": 2000
+}

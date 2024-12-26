@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button id="power" onclick="toggle()">TURN PC IDK</button>
+        <script>
+            const powerElement = document.getElementById("power");
+
+            getState().then(state => {
+                if (state === 0) powerElement.innerHTML = "TURN PC ON"; else powerElement.innerHTML = "TURN PC OFF"; 
+            });
+
+            function toggle() {
+                return fetch("/state/toggle", { method: "POST" });
+            }
+
+            function getState() {
+                return fetch("/state").then(i => i.json());
+            }
+        </script>
+    </body>
+</html>

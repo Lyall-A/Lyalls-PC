@@ -1,0 +1,5 @@
+{
+    "port": 4923,
+    "timeout": 2000,
+    "shutdownCmd": "shutdown /s /t 0"
+}
